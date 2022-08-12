@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family:VNF-Futura,Helvetica, Arial , sans-serif;
+  }
+#header{
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    /* background: burlywood; */
+    text-shadow: none;
+}
+#header .menu{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    right: 0;
+    width: calc(100% - 60px);
+    background-color: #fff;
+}
+#header .menu li{
+    overflow: hidden;
+}
+
+#header .menu li a{
+    padding: 16px;
+    color: #bba583;
+    display: inline-block;
+    text-decoration: none
+    
+}
+#header .menu .menu-item{
+    font-size: 24px;
+    color: #925d5d;
+    /* padding: 32px; */
+    padding-right: 40px;
+    /* border-right:1px solid #925d5d; */
+}
+.header-tilte
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  min-height: 700%;
+  z-index: 1;
+  background-color: #161616;
+  border-right: 2px solid #685556;
+}
+.header-tilte .header-logo{
+    padding: 13px 8px 8px 9px;
+    text-align: center;
+    color: aliceblue;
+}
+.header-tilte .header-logo img{
+    width: 100%;
+}
+.header-icon{
+    margin-top:100px;
+    text-align: center;
+    color: brown;
+    font-size: 24px;
+}
+.header-icon i{
+    padding: 16px;
+    display: inline-block;
+}
+#container .content{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* width: calc(100% -60px); */
+}
+#container .images{
+  min-height: 400px;
+  
+}
+.content h2{
+    margin-top: 16px;
+    color: #af956c;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-bottom: 32px;
+}
+.content .content-text{
+    margin-top: 16px;
+    line-height: 2;
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+.content .content-text .content-text-footer{
+   margin-top: 16px;
+   margin-bottom: 32px;
+}
+.content .note{
+  font-style: italic;
+  
+}
+
+.content-readmore{
+    height: 800px;
+}
+
+.content-redmore-img-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+.content-animals{
+    padding: 16px;
+    width: 220px;
+}
+.content-redmore-img-list img{
+    width: 100%;
+    height: 280px;
+}
+.content-redmore-img-list p{
+  padding-top: 16px;
+  font-size: 14px;
+  color: #b16150;
+  text-transform: uppercase;
+}
+.content-animals:hover{
+    opacity: 0.8;
+    transform: matrix3d(100px);
+}
+.content-animals a{
+    text-decoration: none;
+}
