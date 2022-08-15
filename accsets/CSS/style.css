@@ -79,7 +79,21 @@ html {
     padding: 16px;
     display: inline-block;
 }
-
+.header-icon .header-search{
+    transform: 3s;
+    animation: pluse 2s ease-out infinite;
+    background-color:#fff;
+}
+.header-icon .header-search:hover{
+    background-color:#fff;
+    transform: scale(1.5);
+}
+@keyframes pluse {
+    100%{
+      transform: scale(1.1);
+      opacity: 0;
+    }
+  }
 #container .content {
     width: 700px;
     margin-left: auto;
@@ -90,9 +104,70 @@ html {
 
 #container .images {
     min-height: 400px;
-
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 60px;
 }
+figure{
+    position: relative;
+    left: 0;
+    display: flex;
+    /* justify-content: space-around; */
+    animation: 20s silde infinite;
+    width: 400%;
 
+    /* height: 100%; */
+    /* float: left; */
+  }
+#container .block-img {
+    position: relative;
+    width: 25%;
+    /* float: left; */
+    min-height: 400px;
+}
+#container .block-img img{
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+}
+@keyframes silde{
+    0%{
+      left: 0;
+    }
+    10%{
+      left: 0;
+    }
+    20%{
+      left: -100%;
+    }
+    30%{
+      left: -100%;
+    }
+    40%{
+     left:  -200%;
+    }
+    55%{
+      left: -300%;
+    }
+    65%{
+      left: -300%;
+    }
+    66%{
+        left: -200%;
+      }
+    70%{
+      left: -100%;
+    }
+    80%{
+        left: -100%;
+      }
+    90%{
+      left: 0;
+    }
+    100%{
+      left: 0;
+    }
+  }
 .content h2 {
     margin-top: 16px;
     color: #af956c;
