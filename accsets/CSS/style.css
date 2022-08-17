@@ -103,6 +103,7 @@ html {
 }
 
 #container .images {
+    
     min-height: 400px;
     width: 100%;
     overflow: hidden;
@@ -113,7 +114,7 @@ figure{
     left: 0;
     display: flex;
     /* justify-content: space-around; */
-    animation: 20s silde infinite;
+    animation: 10s silde infinite;
     width: 400%;
 
     /* height: 100%; */
@@ -132,40 +133,46 @@ figure{
 }
 @keyframes silde{
     0%{
-      left: 0;
+        left:0;
     }
     10%{
-      left: 0;
+        left:0;
     }
     20%{
-      left: -100%;
+        left:-100%;
     }
     30%{
-      left: -100%;
+        left:-100%;
     }
     40%{
-     left:  -200%;
+        left:-200%;
+    }
+    50%{
+        left:-200%;
     }
     55%{
-      left: -300%;
+        left:-300%;
     }
     65%{
-      left: -300%;
+        left:-300%;
     }
     66%{
-        left: -200%;
-      }
-    70%{
-      left: -100%;
+        left:-200%;
     }
-    80%{
-        left: -100%;
-      }
+    74%{
+        left:-200%;
+    }
+    75%{
+        left:-100%;
+    }
+    85%{
+        left:-100%;
+    }
     90%{
-      left: 0;
+        left:0;
     }
-    100%{
-      left: 0;
+    1000%{
+        left:0;
     }
   }
 .content h2 {
@@ -225,7 +232,7 @@ figure{
 
 .content-animals:hover {
     opacity: 0.8;
-    transform: matrix3d(100px);
+    transform: scale(1.2);
 }
 
 .content-animals a {
